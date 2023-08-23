@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkdin</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+        <div class="main-header-div">
+          <div class="linkdin-logo-and-searchbar">
+            <div class="linkdin-header-logo">
+              <img src="./image/linkdin-logo.png" alt="linkdin" />
+            </div>
+            <div class="search-input-and-logo">
+              <svg
+                viewBox="0 0 512 512"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M497.913 497.913c-18.782 18.782-49.225 18.782-68.008 0l-84.862-84.863c-34.889 22.382-76.13 35.717-120.659 35.717C100.469 448.767 0 348.312 0 224.383S100.469 0 224.384 0c123.931 0 224.384 100.452 224.384 224.383 0 44.514-13.352 85.771-35.718 120.676l84.863 84.863c18.782 18.782 18.782 49.209 0 67.991zM224.384 64.109c-88.511 0-160.274 71.747-160.274 160.273s71.764 160.274 160.274 160.274c88.525 0 160.273-71.748 160.273-160.274S312.909 64.109 224.384 64.109z"
+                  fill="#5e5e5e"
+                  class="fill-000000"
+                ></path>
+              </svg>
+              <input type="search" placeholder="Search" />
+            </div>
+          </div>
+          <div class="header-nav">
+            <div class="left-nav-div">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="currentColor"
+                      class="mercado-match"
+                      width="24"
+                      height="24"
+                      focusable="false"
+                    >
+                      <path
+                        d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"
+                      ></path>
+                    </svg>
+                    <h4>Home</h4></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="currentColor"
+                      class="mercado-match"
+                      width="24"
+                      height="24"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"
+                      ></path>
+                    </svg>
+                    <h4>My Network</h4></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="currentColor"
+                      class="mercado-match"
+                      width="24"
+                      height="24"
+                      focusable="false"
+                    >
+                      <path
+                        d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"
+                      ></path>
+                    </svg>
+                    <h4>jobs</h4></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="currentColor"
+                      class="mercado-match"
+                      width="24"
+                      height="24"
+                      focusable="false"
+                    >
+                      <path
+                        d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"
+                      ></path>
+                    </svg>
+                    <span>6</span>
+                    <h4>Messaging</h4></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="currentColor"
+                      class="mercado-match"
+                      width="24"
+                      height="24"
+                      focusable="false"
+                    >
+                      <path
+                        d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"
+                      ></path>
+                    </svg>
+                    <span>23</span>
+                    <h4>Notifications</h4></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./image/gmail-dp.jpg" alt="linkdin" />
+                    <h4>
+                      Me
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-caret-down-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                        />
+                      </svg>
+                    </h4>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="right-nav-div">
+              <ul>
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      fill="currentColor"
+                      class="mercado-match"
+                      width="24"
+                      height="24"
+                      focusable="false"
+                    >
+                      <path
+                        d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"
+                      ></path>
+                    </svg>
+                    <h4>
+                      For Business
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-caret-down-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                        />
+                      </svg>
+                    </h4>
+                  </a>
+                </li>
+                <li class="primium-link">
+                  <a href="#">
+                    <h4>Try primium for free</h4>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+    <section class="main-contain">
+      <div class="main-container">
+        <div class="id-card-and-community-div">
+          <div class="id-card">
+            <div class="profile-dp-and-name">
+              <div class="profile-dp-and-name-top">
+                <img src="./image/id-card-background-img.svg" alt="linkdin" />
+              </div>
+              <div class="profile-dp-and-name-main">
+                <a href="#">
+                  <div class="profile-dp">
+                    <img src="./image/gmail-dp.jpg" alt="linkdin" />
+                  </div>
+                  <h4 class="name">Mohammad Ali Qureshi</h4>
+                  <h6>Full stack developer</h6>
+                </a>
+              </div>
+            </div>
+            <div class="connections-info">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="connections-count1">
+                      <p>Connections</p>
+                      <span>536</span>
+                    </div>
+                    <div class="connections-count2">Connect with alumni</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="profile-viewed">
+                      <p>Who's viewed your profile</p>
+                      <span>56</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="access-tools">
+              <a href="#">
+                <h5>Access exclusive tools & insights</h5>
+                <div class="access-tools-try-premium">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M20 20a3.36 3.36 0 001-2.39V6.38A3.38 3.38 0 0017.62 3H6.38A3.36 3.36 0 004 4z"
+                      fill="#f8c77e"
+                    ></path>
+                    <path
+                      d="M4 4a3.36 3.36 0 00-1 2.38v11.24A3.38 3.38 0 006.38 21h11.24A3.36 3.36 0 0020 20z"
+                      fill="#e7a33e"
+                    ></path>
+                  </svg>
+                  <h4>Try Premium for free</h4>
+                </div>
+              </a>
+            </div>
+            <div class="my-items">
+              <a href="#">
+                <img src="./image/my-item-logo.png" alt="items" />
+                <h4>My items</h4>
+              </a>
+            </div>
+          </div>
+          <div class="community-div">
+            <ul class="community-subjects">
+              <li class="Groups-li">
+                <a href="#">
+                  <h4>Groups</h4>
+                </a>
+              </li>
+              <li class="Events-li">
+                <a href="#">
+                  <h4>Events</h4>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    data-supported-dps="16x16"
+                    fill="currentColor"
+                    class="mercado-match"
+                    width="16"
+                    height="16"
+                    focusable="false"
+                  >
+                    <path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="Followed-Hashtags-li">
+                <a href="#">
+                  <h4>Followed Hashtags</h4>
+                </a>
+              </li>
+            </ul>
+            <div class="discover-more-div">
+              <h4>Discover more</h4>
+            </div>
+          </div>
+        </div>
+        <div class="share-post-box">
+          <div class="post-box-and-post-options">
+            <div class="post-box">
+              <div>
+                <img src="./image/gmail-dp.jpg" alt="image" />
+              </div>
+              <div class="post-button">
+                <input type="button" value="Start a post" />
+              </div>
+            </div>
+            <div class="post-options">
+              <ul>
+                <li><a href="#"> <img src="./image/photosIcon.png" style="height: 20px;" alt="linkdin">
+                <h4>
+                  Photo
+                </h4></a></li>
+                <li><a href="#"><img src="./image/video.png" alt="LinkedIn">
+                  <h4>
+                    Video
+                  </h4></a></li>
+                  <li><a href="#"> <img src="./image/event.png" alt="LinkedIn">
+                    <h4>
+                      Events
+                    </h4></a></li>
+                    <li><a href="#"> 
+                      <img src="./image/article.png" alt="LinkedIn">
+                      <h4>
+                        Write article
+                      </h4></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="short-by">
+            <button>
+              <div>
+              <hr>
+              </div>
+              <h5>
+                Sort by:
+                <select  id="sort-by">
+                <option value="" selected>Top</option>
+                <option value="">recent</option>
+                </select>
+              </h5>
+            </button>
+          </div>
+          <div class="posts">
+            <div>
+               
+            </div>
+            <section class="products">
+              <div class="products-container">
+                <div class="product-main">
+                  <div class="product-cards">
+                  <div class="product">
+                    <img src="image/img1.webp" alt="T-Shirt 1" />
+                  </div>
+                  <div class="product">
+                    <img src="image/img2.webp" alt="T-Shirt 2" />
+                  </div>
+        
+                  <div class="product">
+                    <img src="image/img3.webp" alt="T-Shirt 3" />
+                  </div>
+        
+                  <div class="product">
+                    <img src="image/img1.webp" alt="T-Shirt 1" />
+                  </div>
+        
+                  <div class="product">
+                    <img src="image/img2.webp" alt="T-Shirt 2" />
+                  </div>
+        
+                  <div class="product">
+                    <img src="image/img3.webp" alt="T-Shirt 3" />
+                  </div>
+                  <div class="product">
+                    <img src="image/img1.webp" alt="T-Shirt 1" />
+                  </div>
+        
+                  <div class="product">
+                    <img src="image/img2.webp" alt="T-Shirt 2" />
+                  </div>
+                </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="linkdin-news-and-premium-div">
+          <div class="linkdin-news">
+            <div class="linkdin-news-heading">
+             <h3>LinkedIn News</h3>
+             <div>
+              <a href="#"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 48 48" height="48px" id="Layer_3" version="1.1" viewBox="0 0 48 48" width="48px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M26.456,8.366c1.152,0,2.209-0.407,3.161-1.22c0.943-0.812,1.523-1.799,1.731-2.951   c0.195-1.16-0.048-2.138-0.764-2.951c-0.714-0.821-1.648-1.228-2.803-1.228c-1.159,0-2.214,0.407-3.158,1.228   c-0.955,0.813-1.535,1.792-1.732,2.951c-0.143,1.151,0.133,2.139,0.812,2.951C24.384,7.959,25.305,8.366,26.456,8.366z" fill="#fff"/><path d="M36.68,37.971c0-0.352-0.462-0.712-1.361-1.088c-0.105,0.152-0.211,0.282-0.316,0.435   c-0.627,0.798-2.965,3.613-6.008,5.3c-0.02,0.008-0.036,0.016-0.048,0.027c-0.265,0.141-0.536,0.246-0.808,0.371   c-0.803,0.286-1.552,0.36-1.793,0.38c-0.683-0.09-1.053-0.567-1.053-1.471c0-0.747,0.219-2.222,0.663-4.439l0.51-2.237   l2.083-10.001c0.339-1.705,0.521-2.649,0.562-2.835l0.454-2.339c0.268-1.449,0.404-2.406,0.404-2.873   c0-0.894-0.224-1.572-0.579-2.124c-0.031-0.08-0.074-0.161-0.133-0.245c-0.054-0.064-0.107-0.121-0.164-0.18   c-0.062-0.066-0.095-0.129-0.179-0.198c-0.888-0.726-1.715-0.933-2.287-0.979l0.01-0.016c0,0-3.759-0.286-9.326,3.383   c-0.081,0.054-0.13,0.09-0.204,0.141c-1.507,0.954-2.712,1.913-3.547,2.681c-0.642,0.547-1.135,1.058-1.5,1.533   c0,0.002-0.018,0.021-0.018,0.021l0.004-0.002c-0.476,0.624-0.726,1.193-0.726,1.695c0,0.397,0.32,0.794,0.958,1.189   c0,0,2.392-3.086,6.41-5.096c0.304-0.131,1.076-0.45,1.755-0.627c0.316-0.073,0.915-0.129,1.298,0.187   c0.274,0.284,0.456,0.683,0.456,1.301c0,0.563-0.085,1.243-0.256,2.061l-0.407,1.926l-0.507,2.407l-1.984,9.517   c-1.015,4.916-1.523,7.857-1.523,8.815c0,2.261,1.237,3.392,3.71,3.392c1.12,0,2.274-0.203,3.455-0.566   c0.008,0,0.012,0.004,0.02,0.007c0.081-0.027,0.155-0.059,0.232-0.085c0.196-0.063,0.394-0.138,0.59-0.213   c5.578-2.076,9.248-6.257,10.359-7.657c0.098-0.118,0.18-0.23,0.262-0.337c0.062-0.086,0.102-0.145,0.102-0.145h-0.004   C36.527,38.573,36.68,38.229,36.68,37.971z" fill="#fff"/></g></svg></a>
+             </div>
+            </div>
+            <div class="news-main">
+                 <ul>
+                  <li><a href="#">
+                    <h3>
+                      <span></span>
+                      Top trends in AI, finance, and retail
+                    </h3>
+                    <h5>
+                      Top news
+                      <ul>
+                        <li>
+                          2,107 readers
+                        </li>
+                      </ul>
+                    </h5>
+                  </a></li>
+                  <li><a href="#">
+                    <h3>
+                      <span></span>
+                      Decoding the stock market's rally
+                    </h3>
+                    <h5>
+                      16h ago
+                    </h5>
+                  </a></li>
+                  <li><a href="#">
+                    <h3>
+                      <span></span>
+                      How will AI affect retail?
+                    </h3>
+                    <h5>
+                      10h ago
+                    </h5>
+                  </a></li>
+                  <li><a href="#">
+                    <h3>
+                      <span></span>
+                      True equality, a matter of Pride
+                    </h3>
+                    <h5>
+                      2d ago
+                      <ul>
+                        <li>
+                          176 readers
+                        </li>
+                      </ul>
+                    </h5>
+                  </a></li>
+                  <li><a href="#">
+                    <h3>
+                      <span></span>
+                      Universities begin UG admissions
+                    </h3>
+                    <h5>
+                      15h ago
+                      <ul>
+                        <li>
+                          141 readers
+                        </li>
+                      </ul>
+                    </h5>
+                  </a></li>
+                 </ul>
+                 <div class="show-more-button">
+                  <h4>Show more</h4>
+                  <?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#808080;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g data-name="442-Arrow down" id="_442-Arrow_down"><polyline class="cls-1" points="31 8 16 22 1 8"/></g></svg>
+                 </div>
+            </div>
+          </div>
+          <footer>
+               <ul>
+                <li>
+                  <a href="#"><span>About</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Accessibility</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Help Center</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Privacy & Terms 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"></path>
+                  </svg></span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Ad Choices</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Advertising</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Business Services
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                      <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"></path>
+                    </svg>
+                  </span></a>
+                </li>
+                <li>
+                  <a href="#"><span>Get the LinkedIn app</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>More</span></a>
+                </li>
+              </ul>
+              <div class="linkedin-corpo">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 14" data-supported-dps="56x14" fill="currentColor" class="mercado-match" width="56" height="14" focusable="false">
+                    <g>
+                      <path class="background-mercado" d="M22.1 8.2l3.09 3.8h-2.44L20 8.51V12h-2V2h2v5.88L22.54 5h2.55zm-8-3.4A2.71 2.71 0 0011.89 6V5H10v7h2V8.73a1.74 1.74 0 011.66-1.93C14.82 6.8 15 7.94 15 8.73V12h2V8.29c0-2.2-.73-3.49-2.86-3.49zM32 8.66a4.22 4.22 0 010 .44h-5.25v.07a1.79 1.79 0 001.83 1.43 2.51 2.51 0 001.84-.69l1.33 1a4.31 4.31 0 01-3.25 1.29 3.49 3.49 0 01-3.7-3.75 3.58 3.58 0 013.76-3.65C30.44 4.8 32 6.13 32 8.66zm-1.86-.86a1.46 1.46 0 00-1.59-1.4 1.64 1.64 0 00-1.8 1.4zM2 2H0v10h6v-2H2zm36 0h2v10h-1.89v-.7a2.44 2.44 0 01-2 .9 3.41 3.41 0 01-3.31-3.7 3.36 3.36 0 013.3-3.7 2.62 2.62 0 011.9.7zm.15 6.5a1.63 1.63 0 00-1.62-1.85A1.76 1.76 0 0034.9 8.5a1.76 1.76 0 001.63 1.85 1.63 1.63 0 001.62-1.85zM8 1.8A1.27 1.27 0 006.75 3a1.25 1.25 0 002.5 0A1.27 1.27 0 008 1.8zM7 12h2V5H7zM56 1v12a1 1 0 01-1 1H43a1 1 0 01-1-1V1a1 1 0 011-1h12a1 1 0 011 1zM46 5h-2v7h2zm.25-2a1.25 1.25 0 00-2.5 0 1.25 1.25 0 002.5 0zM54 8.29c0-2.2-.73-3.49-2.86-3.49A2.71 2.71 0 0048.89 6V5H47v7h2V8.73a1.74 1.74 0 011.66-1.93C51.82 6.8 52 7.94 52 8.73V12h2z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <h5>LinkedIn Corporation &copy;2023 </h5>
+              </div>
+          </footer>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="message-box">
+        <div class="message-box-header">
+            <div class="message-box-dp">
+              <img src="./image/gmail-dp.jpg" alt="">
+              <span>&nbsp;</span>
+              <h5>Messaging</h5>
+            </div>
+            <div class="message-box-header-right">
+                <ul>
+                  <li>
+                    <a href="#"><?xml version="1.0" ?><svg class="icon icon-tabler icon-tabler-dots" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none" stroke="none"/><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg data-name="Layer 1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M27.005 31.917v10.16a1.121 1.121 0 0 0 1.121 1.122h7.159L39.166 47v-3.802h6.718a1.121 1.121 0 0 0 1.121-1.121V29.372a1.121 1.121 0 0 0-1.121-1.122H32.25M1 12.314l10 10 18.385 7.071L22.314 11l-10-10" stroke-linejoin="round" fill="none" stroke="#808080" stroke-linecap="round" stroke-width="2px" class="stroke-353535"></path><path d="m11 22.314.707-4.95 4.95-.707.707-4.95 4.95-.707M21.606 25.849l4.243-4.243" stroke-miterlimit="10" fill="none" stroke="#808080" stroke-linecap="round" stroke-width="2px" class="stroke-353535"></path></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M1 23 16 9l15 14" data-name="441-Arrow up" fill="none" stroke="#808080" stroke-linejoin="round" stroke-width="2px" class="stroke-000000"></path></svg>
+                  </a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>

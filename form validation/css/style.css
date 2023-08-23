@@ -1,0 +1,153 @@
+
+.main-div{
+    width: 60% !important;
+    padding-top: 100px;
+    padding-left: 55px !important;
+    padding-right: 55px !important;
+    border: 16px solid rgb(236, 240, 241);
+    margin-top: 50px;
+    align-self: center;
+}
+.heading-top h1 {
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.heading-top p{
+    color: #808080;
+    font-size: 24px;
+}
+.form-div{
+    background-color: #ffff;
+}
+.form-div label{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.form-div input{
+    box-shadow: 0px 0px 18px 1px #ebebebd4;
+    height: 50px;
+    border: 2px solid #ebebebd4 ;
+    border-radius: 10px;
+}
+#check0,#check1,#check2,#check3,#check4
+{
+   display:block;
+   position:relative;
+   margin:1%;
+   color:orange; 
+   font-size:16px;
+   width:92% ;
+   
+}
+#passwordMessage{
+    display: none;
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+}
+span
+{
+    margin:10px;
+    font-weight: 400;
+}
+input[type="button"]{
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 80px;
+}
+.new-password-div{
+    margin-bottom: 30px;
+}
+#new-password-display{
+    display: none;
+}
+
+@media (min-width:993px) and (max-width:1200px){
+    .main-div{
+        width: 70% !important;
+        padding-top: 80px!important;
+        padding-right: 40px !important;
+        padding-left: 40px !important;
+    }
+.heading-top h1{
+    font-size: 31px;
+}
+.heading-top p{
+    font-size: 16px;
+}
+}
+@media (min-width:768px) and (max-width:993px){
+    .main-div{
+        width: 85% !important;
+        padding-top: 80px!important;
+        padding-right: 40px !important;
+        padding-left: 40px !important;
+    }
+    .heading-top h1{
+        font-size: 36px;
+    }
+    .heading-top p{
+        font-size: 20px;
+    }
+    .form-div label {
+        font-size: 18px;
+    }
+    .new-password-div {
+        margin-bottom: 12px;
+    }
+    .form-div input {
+        height: 50px;
+    }
+    input[type="button"] {
+        font-size: 16px;
+        margin-bottom: 70px;
+    }
+    .form-div p{
+        margin: 12px 0;
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .main-div{
+        width: 85% !important;
+        padding-top: 80px!important;
+        padding-right: 40px !important;
+        padding-left: 40px !important;
+    }
+    .heading-top p {
+        font-size: 16px;
+    }
+    #check0, #check1, #check2, #check3, #check4 {
+        margin: 4%;
+        font-size: 10px;
+    }
+    span {
+        font-weight: 500;
+    }
+}
+@media (max-width:576px) {
+    .main-div{
+        width: 90% !important;
+        padding-top: 80px!important;
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+    }
+    .heading-top h1{
+        font-size: 26px;
+    }
+    .heading-top p {
+        font-size: 12px;
+    }
+    .form-div label {
+        font-size: 14px;
+    }
+    .form-div input {
+        height: 40px;
+    }
+}
+
+  
+    

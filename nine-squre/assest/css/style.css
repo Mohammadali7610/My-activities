@@ -1,0 +1,508 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,800;1,100;1,500;1,700&family=Rubik+Gemstones&family=Source+Code+Pro:ital,wght@1,300&display=swap');
+
+
+
+body{
+    /* font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik Gemstones', cursive;
+font-family: 'Source Code Pro', monospace; */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navbar css is strated */
+
+.header_wrapper {
+    border-bottom: 1px solid #7CC3A1;
+    box-shadow: 0px 0px 20px rgba(42, 84, 84, 0.25);
+
+}
+
+.header_wrapper .inner_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+
+}
+
+.header_wrapper .inner_header .list_item ul {
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+
+
+}
+
+/* .header_wrapper .inner_header .list_item ul li {
+    transition: all 0.5s;
+} */
+
+.header_wrapper .inner_header .list_item ul li:hover {
+    border-bottom: 1px solid#7CC3A1;
+ 
+   
+
+}
+
+.header_wrapper .inner_header .list_item ul li a {
+    color: black;
+
+
+
+}
+
+.header_wrapper .inner_header .list_item .search_icon img {
+    width: 14px;
+    margin-right: 5px;
+}
+
+.header_wrapper .inner_header .list_item .search_icon a {
+    color: black;
+
+}
+
+/* NAVBAR CSS END */
+
+/* BANNER_WRAPPER CSS STARTED */
+.banner_wrapper .banner_container {
+    max-width: 1920px;
+}
+.banner_wrapper .banner_container .banner_btn_group {
+    position: relative;
+    margin-top: 100px;
+}
+.banner_wrapper .banner_container .banner_btn_group button {
+    filter: invert(1);
+    left: 0;
+}
+.banner_wrapper .banner_container .banner_btn_group button.carousel-control-next{
+    margin-left: 50px;
+}
+
+.heading_wrapper {
+    padding: 116px 108px
+}
+.banner_wrapper .banner_inner{
+    padding: 0 15px;
+}
+
+.banner_wrapper .banner_inner .heading_wrapper h1 {
+    font-family: 'Questrial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.banner_wrapper .banner_inner .heading_wrapper p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+    opacity: 0.6;
+}
+
+.banner_wrapper .banner_inner .heading_wrapper .btn {
+
+    border: 1px solid #7b7878;
+    border-radius: 1px;
+
+    width: 130px;
+}
+.banner_wrapper .banner_inner .heading_wrapper .btn:hover{
+    background-color: #7CC3A1;
+    color: white;
+    cursor: pointer;
+}
+
+.crousal_wrapper .carousel-control-prev-icon {
+    filter: invert(1);
+    position: absolute;
+    top: 91%;
+    right: 364%;
+}
+
+.crousal_wrapper .carousel-control-next-icon {
+    filter: invert(1);
+    position: absolute;
+    top: 91%;
+    right: 910%
+}
+
+/* BANNER_WRAPPER CSS END */
+
+/* Detain_banner css start */
+
+.detail_wrapper .banner_inner .detail_card .card {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+.detail_wrapper .banner_inner .detail_card .card-body h5 {
+    font-size: 120px;
+    -webkit-text-stroke: 2px #2aae6e;
+    color: white;
+    font-style: normal;
+    opacity: 0.3;
+    
+}
+.detail_wrapper .banner_inner .vission{
+    position: relative;
+}
+.detail_wrapper .banner_inner .vission .vission_content{
+    position: absolute;
+    top: 116px;
+}
+.detail_wrapper img{
+    position: absolute;
+    opacity: 0.1;
+}
+
+ .detail_wrapper .banner_inner .detail_card {
+    padding: 60px 0px; }
+    
+ 
+
+.detail_wrapper .banner_inner .detail_card .card-body h6 {
+    font-family: 'Questrial';
+    font-weight: 400;
+    font-size: 27px;
+    text-align: center;
+}
+
+.detail_wrapper .banner_inner .detail_card .card-body p {
+
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #4f4e4e;
+    margin-top: 10px;
+    margin-top: -1%;
+    font-size: 11px
+}
+
+.detail_wrapper .banner_inner .detail_card .card-body a {
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+    text-transform: uppercase;
+  
+}
+
+.detail_wrapper .banner_inner .detail_card .card-body .border_bottom {
+    border-bottom: 1px solid #00000080;
+    max-width: 12%;
+    margin-top: 6px;
+    margin-left: 44%;
+}
+/* Detain_banner css end */
+/* vission css start */
+.vission_wrapper{
+    position: relative;
+}
+.vission_wrapper .vission_inner .vission{
+    padding: 0 60px;
+}
+.vission_wrapper .vission_background_img img{
+ width: 32%;
+    position: absolute;
+    left: 67%;
+    top: 45%;
+}
+
+.vission_wrapper .vission_inner .vission span{
+    font-size: 150px;
+    font-weight: 700;
+    -webkit-text-stroke: 2px #7CC3A1;
+    opacity: 0.3;
+    color: white
+}
+.vission_wrapper .vission_inner .vission .vission_content{
+    margin-top: -91px;
+    margin-left: 25px;
+}
+.vission_wrapper .vission_inner .vission .vission_content h1{
+    font-size: 40px;
+}.vission_wrapper .vission_inner .vission .vission_content .btn{
+    border-radius: 2px;
+}
+.vission_wrapper .vission_inner .vission .vission_content .btn:hover{
+    background-color: #7CC3A1;
+    color: white;
+}
+.vission_wrapper .vission_inner .vission .vission_content p{
+    font-size: 14px;
+}
+/* vission css end */
+/* team secion css started */
+.project_container{
+    max-width: 1775px;
+    padding: 60px 0;
+}
+
+.team_wrapper{
+    width: 100%;
+}
+.team_wrapper .team_inner .expert_wrapper span{
+    font-size: 120px;
+    opacity: 0.4;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #7CC3A1;
+    color: white;
+  
+
+}
+.team_wrapper .carousel-control-prev{
+   width: 5%;
+   position: static;
+
+}
+.team_wrapper .carousel-control-prev-icon{
+    filter: invert(1);
+}
+.team_wrapper .carousel-control-next{
+    width: 5%;
+    position: static;
+}
+ .team_wrapper .carousel-control-next-icon{
+    filter: invert(1);
+}
+
+.team_wrapper .team_inner .expert_wrapper h3{
+    font-size: 57px;
+    margin-top: -8%;
+    margin-left: 13px;
+}
+.team_wrapper .team_btn_group{
+    height: 40px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.team_wrapper .team_btn_group .carousel-control-next{
+    top: 6px;
+
+}
+.team_wrapper .team_inner .team_group .team_image span{
+    font-size: 27px;
+}
+.team_wrapper .team_inner .team_group .team_image p{
+    font-size: 12px;
+color: gray;
+}
+
+.team_wrapper .team_inner .expert_wrapper p{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: gray;
+   
+}
+.team_wrapper .team_inner .team_group .carousel-control-next{
+    filter: brightness(0.5);
+
+}
+.team_wrapper{
+    position: relative;
+}
+.team_wrapper .background_image{
+    position: absolute;
+    top: -27%;
+}
+.project_wrapper .project_inner .project_heading span{
+    font-size: 120px;
+    opacity: 0.3;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #7CC3A1;
+    color: white;
+    margin-left: 12%;
+}
+.project_wrapper .project_inner .project_heading h3{
+    margin-top: -6%;
+    font-size: 45px;
+    margin-left: 11%;
+    font-weight: 600
+}
+.project_wrapper .project_inner{
+    text-align: center;
+}
+.project_wrapper .project_inner .project_images {
+ display: grid;
+ grid-template-columns: repeat(5, 1fr);
+ gap: 15px;
+}
+   /* video css start */
+   .video_wrapper{
+    padding: 60px 0;
+    position: relative;
+   }
+   .video_wrapper .video_inner .play-button img{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+   }
+   .video_wrapper .video_inner .video{
+    padding: 0 60px;
+   }
+
+.team_container {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+/* coonect_wrapper css :start */
+.connect_wrapper{
+    text-align: center;
+}
+.connect_wrapper .inner_wrapper .project_heading span{
+    font-size: 120px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #7CC3A1;
+    opacity: 0.3;
+    color: white;
+}
+.connect_wrapper .inner_wrapper .project_heading h3{
+    font-size: 45px;
+    margin-top: -6%;
+    text-transform: uppercase;
+}
+/* coonect_wrapper css :end */
+.footer_connect{
+    background-color: 
+    #E7E7E7;
+}
+.footer_connect .connect_inner{
+    padding: 60px 0;
+    font-size: 12px;
+}
+.footer_connect .connect_inner h4{
+    font-weight: 600;
+    margin-left: 6px;
+    margin-top: 9px;
+}
+.footer_connect .connect_inner .info-email{
+  
+    margin-bottom: 9px;
+}
+.footer_connect .connect_inner .information{
+border-bottom: 1px solid  #7CC3A1
+
+}
+.footer_connect .connect_inner .info-connect{
+    border-left: 1px solid  #7CC3A1;
+    padding-left: 23px;
+}
+.footer_connect .connect_inner .socail-icon {
+    display: flex;
+    margin-top: 20px;
+}
+.footer_connect .connect_inner .socail-icon .icon{
+    padding: 9px;
+    background-color: white;
+    border-radius: 35px;
+    margin-right: 10px;
+}
+.footer_connect .connect_inner .ninesquares{
+    text-align: center;
+    margin: auto;
+}
+.footer_connect .connect_inner .career_address img{
+    height: 100%;
+    margin-top: 5px;
+}
+.footer_connect .connect_inner span{
+    font-weight: 600;
+}
+.footer_connect .connect_inner .icon-1{
+    display: flex;
+    
+
+}
+/* footer css started */
+.client_wrapper{
+    position: relative;
+}
+.client_wrapper .client_inner{
+    font-size: 12px;
+}
+.client_wrapper .client_btn_group{
+    position: absolute;
+    top: calc(50% + 40px);
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.client_wrapper .client_btn_group button{
+    left: 0;
+}
+.client_wrapper .client_btn_group button.carousel-control-next{
+    left: auto;
+    right: 0;
+}
+.client_wrapper .client_inner .feedback_wrapper span{
+    font-size: 120px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #7CC3A1;
+    opacity: 0.4;
+    color: white
+}
+.client_wrapper .client_inner .feedback_wrapper h3{
+    font-size: 45px;
+    margin-top: -6%;
+    text-transform: uppercase;
+}
+.client_wrapper .client_inner .para-content span{
+    font-weight: 600;
+}
+.client_wrapper .client_inner .para-content{
+  
+    padding: 28px;
+    border-radius: 16px;
+    border: 1px solid #7CC3A1;
+    box-shadow: 0px 0px 20px rgba(42, 84, 84, 0.25);
+}
+
+
+
+ /* footer csss end */
+ .client_wrapper .team_block span{
+    font-size: 16px;
+    font-weight: 600;
+ }
+ .client_wrapper .team_block p{
+    font-size: 18px;
+ color: gray;
+}
+.client_wrapper .carousel-control-prev{
+    filter: invert(1);
+}
+.client_wrapper .carousel-control-prev-icon{
+    /* position: absolute;
+right: 192px;
+ bottom: 133px; */
+}
+.client_wrapper .carousel-control-next{
+    filter: invert(1);
+}
+.client_wrapper .carousel-control-next-icon{
+    /* position: absolute;
+left: 675%;
+ bottom: 133px; */
+}
