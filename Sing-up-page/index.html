@@ -101,7 +101,7 @@
                 return;
             }
 
-            if (nameRegex.test(middleName)) {
+            if (!nameRegex.test(middleName)) {
                 middleNameError.textContent = "Middle Name should contain only characters.";
                 return;
             }
