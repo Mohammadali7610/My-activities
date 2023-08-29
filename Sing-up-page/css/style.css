@@ -33,18 +33,37 @@ input {
 }
 
 button {
-    background-color: #097bf6;
+    background-color: #007bff;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #0056b3;
 }
 
 .validation-error {
-    color: red;
+    color: #ff0000;
     font-size: 14px;
+    display: none;
+}
+.validation-error p {
+    display: flex;
+    margin: 0;
+}
+.success-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }

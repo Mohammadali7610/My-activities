@@ -1,52 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup Form</title>
-   <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <form id="signup-form">
-        <label for="firstName">First Name*</label>
-        <input type="text" id="firstName" required>
-        <div class="validation-error" id="firstNameError"></div>
+      <label for="firstName">First Name*</label>
+      <input type="text" id="firstName" required />
+      <div class="validation-error" id="firstNameError">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          Please Enter the first name
+        </p>
+        <br />
+      </div>
+      <div class="validation-error" id="firstNameError2">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          First Name should contain only characters.
+        </p>
+        <br />
+      </div>
 
-        <label for="middleName">Middle Name</label>
-        <input type="text" id="middleName">
-        <div class="validation-error" id="middleNameError"></div>
+      <label for="middleName">Middle Name</label>
+      <input type="text" id="middleName" />
+      <div class="validation-error" id="middleNameError"></div>
 
-        <label for="lastName">Last Name*</label>
-        <input type="text" id="lastName" required>
-        <div class="validation-error" id="lastNameError"></div>
+      <label for="lastName">Last Name*</label>
+      <input type="text" id="lastName" required />
+      <div class="validation-error" id="lastNameError">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          Please Enter the last name
+        </p>
+        <br />
+      </div>
+      <div class="validation-error" id="lastNameError2">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          last Name should contain only characters.
+        </p>
+        <br />
+      </div>
 
-        <label for="email">Email*</label>
-        <input type="email" id="email" required>
-        <div class="validation-error" id="emailError"></div>
+      <label for="email">Email*</label>
+      <input type="email" id="email" required />
+      <div class="validation-error" id="emailError">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          Please Enter your email
+        </p>
+        <br />
+      </div>
+      <div class="validation-error" id="emailError2">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          Please Enter the valid email
+        </p>
+        <br />
+      </div>
 
-        <label for="password">Password*</label>
-        <input type="password" id="password" required>
-        <div class="validation-error" id="passwordError"></div>
+      <label for="password">Password*</label>
+      <input type="password" id="password" required />
+      <div class="validation-error" id="passwordError">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          Please Enter password
+        </p>
+        <br />
+      </div>
+      <div class="validation-error" id="passwordError2">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          Password should be at least 8 characters with 1 number and 1 special
+          character.
+        </p>
+        <br />
+      </div>
 
-        <label for="confirmPassword">Confirm Password*</label>
-        <input type="password" id="confirmPassword" required>
-        <div class="validation-error" id="confirmPasswordError"></div>
+      <label for="confirmPassword">Confirm Password*</label>
+      <input type="password" id="confirmPassword" required />
+      <div class="validation-error" id="confirmPasswordError">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          Please Enter confirm password
+        </p>
+        <br />
+      </div>
+      <div class="validation-error" id="confirmPasswordError2">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          password id not match
+        </p>
+        <br />
+      </div>
 
-        <label for="dob">Date of Birth*</label>
-        <input type="date" id="dob" required>
-        <div class="validation-error" id="dobError"></div>
+      <label for="dob">Date of Birth*</label>
+      <input type="date" id="dob" required />
+      <div class="validation-error" id="dobError">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          Please Enter date of birth
+        </p>
+        <br />
+      </div>
 
-        <label for="github">GitHub Profile Link</label>
-        <input type="url" id="github">
-        <div class="validation-error" id="githubError"></div>
+      <label for="github">GitHub Profile Link</label>
+      <input type="url" id="github" />
+      <div class="validation-error" id="githubError">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          Please Enter github url
+        </p>
+        <br />
+      </div>
+      <div class="validation-error" id="githubError2">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          Please Enter valid github url
+        </p>
+        <br />
+      </div>
 
-        <label for="linkedin">LinkedIn Profile Link*</label>
-        <input type="url" id="linkedin" required>
-        <div class="validation-error" id="linkedinError"></div>
+      <label for="linkedin">LinkedIn Profile Link*</label>
+      <input type="url" id="linkedin" required />
+      <div class="validation-error" id="linkedinError">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          Please Enter LinkedIn url
+        </p>
+        <br />
+      </div>
+      <div class="validation-error" id="linkedinError2">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          Please Enter valid LinkedIn url
+        </p>
+        <br />
+      </div>
 
-        <button type="submit">Submit</button>
+      <button type="submit" id="formSubmit" onclick="checkFormFillup">
+        Submit
+      </button>
+
+      <div id="successMessage" class="success-message">
+        Form submitted successfully!
+    </div>
+    
     </form>
 
+<<<<<<< Updated upstream
     <script>
         const form = document.getElementById("signup-form");
 
@@ -165,4 +436,8 @@
         });
     </script>
 </body>
+=======
+    <script src="./js/main.js"></script>
+  </body>
+>>>>>>> Stashed changes
 </html>
