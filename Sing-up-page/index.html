@@ -363,8 +363,9 @@
       const nameRegex = /^[A-Za-z]+$/;
       const emailRegex = /^[\w\.-]+@\w+\.\w{2,3}$/;
       const passwordRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
-      const urlRegex = /^https?:\/\/\w+(\.\w+)+/;
-    
+      const githubRegex = /^https?:\/\/github\.com\/.*$/;
+      const linkedinRegex = /^https?:\/\/(www\.)?linkedin\.com\/.*$/;
+
       if(!firstName.value){
           firstName.style.border = '3px solid red';
           firstNameError.style.display = "block";
@@ -450,7 +451,7 @@
       github.style.border = '3px solid red';
       githubError.style.display = "block";
     } 
-    else if (!urlRegex.test(github.value)) {
+    else if (!githubRegex.test(github.value)) {
       github.style.border = '3px solid red';
       githubError2.style.display = "block";
       githubError.style.display = "none";
@@ -466,7 +467,7 @@
       linkedin.style.border = '3px soid red';
       linkedinError.style.display = "block";
     }
-    else if (!urlRegex.test(linkedin.value)) {
+    else if (!linkedinRegex.test(linkedin.value)) {
       linkedin.style.border = '3px solid red';
       linkedinError2.style.display = "block";
       linkedinError.style.display = "none";
@@ -484,8 +485,8 @@
       (!password.value || !passwordRegex.test(password.value)) ||
       (!confirmPassword.value || confirmPassword.value !== password.value) ||
       !dob.value ||
-      (!github.value || !urlRegex.test(github.value)) ||
-      (!linkedin.value || !urlRegex.test(linkedin.value))
+      (!github.value || !githubRegex.test(github.value)) ||
+      (!linkedin.value || !linkedinRegex.test(linkedin.value))
   ) {
       successMessage.style.display = "none";
   } else {
