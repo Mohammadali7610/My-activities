@@ -315,7 +315,7 @@
         Form submitted successfully!
       </div>
     </form>
-
+    
     <script>
       function singUpPage() {
         const form = document.getElementById("signup-form");
@@ -490,6 +490,74 @@
       }
 
       document.addEventListener("DOMContentLoaded", singUpPage);
+    </script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+      import {
+        getDatabase,
+        set,
+        ref,
+      } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js";
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+      } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAhfDTme9_d89cxPlZUZziGGisComf6Peo",
+        authDomain: "sign-up-page-146e8.firebaseapp.com",
+        databaseURL: "https://sign-up-page-146e8-default-rtdb.firebaseio.com",
+        projectId: "sign-up-page-146e8",
+        storageBucket: "sign-up-page-146e8.appspot.com",
+        messagingSenderId: "193832729623",
+        appId: "1:193832729623:web:ca6642d31f0c36848a3052",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const database = getDatabase(app);
+      const auth = getAuth();
+
+      formSubmit.addEventListener("click", (e) => {
+        const firstName = document.getElementById("firstName").value;
+        const middleName = document.getElementById("middleName").value;
+        const lastName = document.getElementById("lastName").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const confirmPassword =document.getElementById("confirmPassword").value;
+        const dob = document.getElementById("dob").value;
+        const github = document.getElementById("github").value;
+        const linkedin = document.getElementById("linkedin").value;
+
+        createUserWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            // Signed in
+            const user = userCredential.user;
+
+            set(ref(database, "users/" + user.uid), {
+              UserName: firstName + " " + middleName + " " + lastName,
+              Email: email,
+              Password: password,
+              Dateofbirth: dob,
+              GithubUrl: github,
+              LinkedinUrl: linkedin,
+            });
+            alert("user created!");
+            // ...
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+
+            alert(errorMessage);
+            // ..
+          });
+      });
     </script>
   </body>
 </html>
