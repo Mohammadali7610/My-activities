@@ -75,7 +75,335 @@ body{
   height: 40px;
 }
 
+.formabout{
+  padding: 10px 5px;
+  text-align: center;
+}
+.formabout h3{
+  font-weight: 500;
+  color: rgb(118, 115, 115);
+  font-family: system-ui;
+}
+.formabout h5{
+  font-weight: 100;
+  font-size: .93rem;
+  color: rgb(116, 111, 111);
+  margin-top: .5rem;
+  font-family: system-ui;
+}
+.gender-main{
+  display: flex;
+  justify-content: center;
+}
 
-section h2{
-  color: #000;
+.gender{
+  color: #c8c8c8;;
+  padding: 10px 0px;
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  border-bottom: 1px solid #c8c8c8;
+}
+.yourgender{
+  width: 25%;
+  display: grid;
+  justify-content: flex-start;
+  place-items : center;
+}
+.yourgender h4{
+  font-size: 14px;
+  color: rgb(139, 137, 137);
+  font-weight: 550;
+}
+.selectgender{
+  display: flex;
+  gap: 30px;
+  padding: 4px ;
+}
+.selectgender div{
+  display: flex;
+  place-items: center;
+  gap: 1rem;
+}
+
+.selectgender div h6{
+  color: rgb(132, 132, 132);
+  font-size: 1rem;
+}
+.selectgender button{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+.selectgender div img{
+  height: 55px;
+  border-radius: 50%;
+}
+
+
+.height-and-weight-main{
+  display: flex;
+  justify-content: center;
+}
+.height-and-weight{
+   gap: 50px;
+  display: flex;
+  color: #848484;;
+  padding: 10px 0px;
+  width: 50%;
+  justify-content: flex-start;
+  border-bottom: 1px solid #c8c8c8;
+  align-items: center;
+}
+
+.height-and-weight-inputs{
+  display: flex;
+  gap: 30px;
+  padding: 4px ;
+  align-items: center;
+}
+.height-and-weight-inputs div{
+  display: flex;
+  align-items: center;
+}
+.height-and-weight-inputs div input{
+  height: 40px;
+  background-color: rgba(152, 232, 230, 0.551);
+}
+.height-and-weight-inputs div input:focus-visible{
+  outline: blue auto 1px;
+
+}
+
+
+.familyhistory {
+  display: flex;
+  padding: 10px 0px;
+  justify-content: flex-start;
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+
+.fm {
+  width: 35%;
+  font-size: 14px;
+  color: grey;
+  font-weight: 550;
+  display: grid;
+ align-items: center;
+  justify-content: flex-start;
+}
+.fmOptions {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.fmOptions-a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.fmOptions-a h4 {
+  margin: 0;
+    color: rgb(104, 96, 96);
+
+}
+.fmOptions-a p {
+  font-size: 0.9rem;
+    color: rgb(104, 96, 96);
+
+}
+.fmOptions-b {
+  display: flex;
+}
+.fmOptions-b div {
+  display: flex;
+  width: 40%;
+  padding: 10px 0px;
+  gap: 10px;
+}
+.fmOptions-b div input{
+  width: 30px;
+}
+
+
+
+.activitylevel {
+  display: flex;
+  padding: 10px 0px;
+  justify-content: flex-start;
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.al {
+  width: 35%;
+  font-size: 14px;
+  color: grey;
+  font-weight: 550;
+  display: grid;
+  place-items: center;
+  justify-content: flex-start;
+}
+.activitylevelOptions {
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+}
+.activitylevelOptions div h3 {
+  color: rgb(104, 96, 96);
+}
+.activity-radio {
+  display: flex;
+}
+.hello {
+  display: flex;
+  gap: 3px;
+}
+.radio-div {
+  padding-top: 2px;
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.circleRadio {
+  height: 30px;
+  width:   30px;
+}
+.radio-div1 {
+  display: flex;
+  flex-direction: column;
+}
+.activity-img {
+  width: 50px;
+}
+.h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(104, 96, 96);
+}
+.p {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+
+.diabetes {
+  display: flex;
+  padding: 10px 0px;
+  justify-content: flex-start;
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 1px solid #c8c8c8;
+}
+.dia {
+  display: grid;
+  justify-content: flex-start;
+  place-items: center;
+  width: 35%;
+  font-size: 0.9rem;
+  color: grey;
+  font-weight: 550;
+}
+.diaOptions {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.inputBox-storage {
+  display: flex;
+}
+.dia-inputBox {
+  display: flex;
+  gap: 5px;
+  width: 33%;
+  align-items: center;
+}
+.dia-inputBox input{
+  width: 30px;
+  height: 30px;
+}
+.dia-input {
+  height: 18px;
+  width: 18px;
+}
+
+
+.pregnancy {
+  display: flex;
+  padding: 10px 0px;
+  justify-content: flex-start;
+  width: 50%;
+  margin: 0 auto;
+}
+.preg {
+  width: 35%;
+  font-size: 0.9rem;
+  color: grey;
+  display: grid;
+  justify-content: flex-start;
+  place-items: center;
+  font-weight: 550;
+}
+.preOptions{
+    display: flex;
+    width: 65%;
+    gap: .6rem;
+    flex-direction: column;
+}
+.pregSelect{
+    display: flex;
+}
+.pregSelect-a{
+    display: flex;
+}
+.preOP{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.preOP input{
+  width: 30px;
+  height: 30px;
+}
+.pregOP2 h3{
+    color: rgb(104,96,96);
+    font-size: 1.1rem;
+}
+.pregOP2 p{
+    color: grey;
+    font-size: 13px;
+}
+.pregOP2{
+    width: 75%;
+}
+.in{
+    height: 18px;
+    width: 18px;
+}
+
+
+.sub{
+  padding-top:15px ;
+  padding-bottom: 15px;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+button{
+  padding: 12px 20px;
+  border-radius: 20px;
+  background-color: rgb(114, 149, 17);
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
 }
