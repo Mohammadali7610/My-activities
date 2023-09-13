@@ -2,7 +2,7 @@ import React from "react";
 
 const FormData = ({ formData }) => {
   return (
-    <div className="form-summary">
+    <div className="form-data">
       <h2>Form Data</h2>
       <p>Gender: {formData.gender}</p>
       <p>Height: {formData.heightFt} ft. {formData.heightIn} in.</p>

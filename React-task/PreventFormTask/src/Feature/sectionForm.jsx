@@ -149,9 +149,6 @@ export const YourGender = ({ selectedGender, onGenderSelection }) => {
           </div>
         </div>
       </div>
-      <div>
-        <p>Selected Gender: {selectedGender}</p>
-      </div>
     </div>
   );
 };
@@ -203,10 +200,6 @@ export const HeightWeightComponent = ({
           </div>
         </div>
       </div>
-      <div>
-        <p>Height: {heightFt}.{heightIn}</p>
-        <p>Weight: {weight}</p>
-      </div>
     </div>
   );
 };
@@ -250,10 +243,6 @@ export const FamilyHistory = ({
             <p>Siblings</p>
           </div>
         </div>
-      </div>
-      <div>
-        <p>Parents Checkbox Checked: {parentsChecked ? "Yes" : "No"}</p>
-        <p>Siblings Checkbox Checked: {siblingsChecked ? "Yes" : "No"}</p>
       </div>
     </div>
   );
@@ -312,9 +301,6 @@ export const ActivityLevel = ({ selectedActivity, onActivityChange }) => {
           </div>
         </div>
       </div>
-      <div>
-        <p>Selected Activity Level: {selectedActivity}</p>
-      </div>
     </div>
   );
 };
@@ -366,9 +352,6 @@ export const Diabetes = ({ selectedDiabetes, onDiabetesChange }) => {
             <label htmlFor="neitherDiabetes">Neither</label>
           </div>
         </div>
-      </div>
-      <div>
-        <p>Selected Diabetes: {selectedDiabetes}</p>
       </div>
     </div>
   );
