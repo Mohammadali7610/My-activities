@@ -3,7 +3,7 @@ import React from "react";
 const FormData = ({ formData }) => {
   return (
     <div className="form-summary">
-      <h2>Form Summary</h2>
+      <h2>Form Data</h2>
       <p>Gender: {formData.gender}</p>
       <p>Height: {formData.heightFt} ft. {formData.heightIn} in.</p>
       <p>Weight: {formData.weight} lbs.</p>
