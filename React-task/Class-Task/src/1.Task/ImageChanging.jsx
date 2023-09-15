@@ -8,12 +8,13 @@ export  function ImageChange() {
     const [toogleButton,settoogleButton] = useState(true)
     const ToggleCLicking = () =>{
       settoogleButton(!toogleButton)
-      setimage(coloredImage)
-      if(!toogleButton===true){
-      setimage(BlackAndWhiteImage)
+      if(!toogleButton){
+        setimage(coloredImage)
       }
+     else if(toogleButton){
+      setimage(BlackAndWhiteImage)
+     }
     }
-    console.log(ToggleCLicking)
 
 
   return (
