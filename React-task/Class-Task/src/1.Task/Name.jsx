@@ -17,7 +17,7 @@ return(
             <input type="text" id="lastname" value={lastName} onChange={(e) => setlastName(e.target.value)}/>
             </div>
         </div>
-        <h3>Welcome to {firstName} to the {lastName} family</h3>
+        <h3>Welcome {firstName} to the {lastName} family</h3>
     </div>
 )
 };
