@@ -26,7 +26,7 @@ if(!openTunnel){
     settunnelColor("white")
 }
 if (!launchMisslie){
-           setsuccessMassage("Launched failed")
+           setsuccessMassage("Launching failed")
         }
    }
 
@@ -44,7 +44,7 @@ if (!launchMisslie){
     }
     console.log(enablePower)
  if (!launchMisslie){
-           setsuccessMassage("Launched failed")
+           setsuccessMassage("Launching failed")
         }
    }
    
@@ -57,7 +57,7 @@ if (!launchMisslie){
         setcountDownColor("white")
     }
      if (!launchMisslie){
-           setsuccessMassage("Launched failed")
+           setsuccessMassage("Launching failed")
         }
    }
 
@@ -68,7 +68,7 @@ if (!launchMisslie){
         setsuccessMassage("Your missle is launched successfully")
        }
        else if (!launchMisslie){
-       setsuccessMassage("Launched failed")
+       setsuccessMassage("Launching failed")
        setmissileLaunchColor("white")
     }
 } 
