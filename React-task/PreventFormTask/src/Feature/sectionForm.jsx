@@ -14,8 +14,6 @@ export const HealthForm = () => {
     parentsChecked: false,
     siblingsChecked: false,
     selectedActivity: "",
-    selectedDiabetes: "",
-    isPregnant: "",
   });
 
   const [showFormData, setShowFormData] = useState(false);
