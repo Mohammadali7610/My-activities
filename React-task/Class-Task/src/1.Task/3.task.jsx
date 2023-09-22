@@ -42,7 +42,6 @@ if (!launchMisslie){
     }else if(enablePower){
         setpowerColor("green")
     }
-    console.log(enablePower)
  if (!launchMisslie){
            setsuccessMassage("Launching failed")
         }

@@ -8,7 +8,7 @@ export function ButtonChange() {
     }
   return (
     <div>
-      <button onClick={onClicked} style={{backgroundColor:btnClick?"orange":"pink"}}>{btnClick?"clickme":"clicked"}</button>
+      <button onClick={onClicked} style={{backgroundColor:btnClick?"orange":"pink"}}>{btnClick?"clicked":"click me"}</button>
     </div>
   )
 }
