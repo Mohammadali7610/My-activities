@@ -1,0 +1,61 @@
+.image-filter-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  
+  input[type="file"] + label {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="file"] + label:hover {
+    background-color: #2980b9;
+  }
+  
+  .filters_container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  } 
+
+  .Image-filters {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+  }
+ 
+  .Image-filters>img{
+    width: 170px;
+
+  }
+
+  #filtered-image {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    width: 250px;
+  }
+  
+  /* Original image title styles */
+  h2 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  

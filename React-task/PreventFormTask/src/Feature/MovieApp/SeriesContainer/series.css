@@ -1,0 +1,72 @@
+.SeriesMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+}
+.SeriesHeading{
+    font-size: 2.9rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SeriesMoviesMain{
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.67);;
+    position: relative;
+    border-radius: 8px;
+    padding: 20px 0;
+}
+.SeriesMovieVote{
+    background-color: rgba(0, 0, 0, 0.67);
+    font-size: 14px;
+    padding: 2px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border-radius: 10px;
+}
+.SeriesMoviesMain:hover{
+    background-color: #000000;
+}
+.SeriesMoviesMainImageDiv{
+    
+    width: 12rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SeriesMoviesMainImage{
+    border-radius: 10px;
+    width: 12rem;
+    height: 20rem;
+}
+.SeriesMoviesMainImage:hover{
+    transition: 0.3s;
+    width: 11.6rem;
+    height: 19.6rem;
+}
+.SeriesMovieInfo{
+    width: 12rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.SeriesMoviesMainTittle{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    margin: 0 ;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.1rem;
+}

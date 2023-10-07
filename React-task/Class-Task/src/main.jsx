@@ -1,6 +1,16 @@
 import ReactDOM from 'react-dom/client';
-import ArrayMap from './21-sept/useEffect/4.ArrayMap';
-import HwProductListLoader from './21-sept/hwTask/3.HwproductListLoader';
+import ParentV2 from './29-sept/class/1.parentV1';
+// import ImageFilter from './26-task/Hwtask/imageFIlter';
+// import CounterWithUseMemo from './27-sept/class/2.with-useMemo';
+// import HwProductListLoader from './21-sept/hwTask/3.HwproductListLoader';
+// import ProductListWithFiltersWithUseMemo from './27-sept/class/3.useMemoFilterProduct';
+// import CodeFlowV1 from './29-sept/class/1.useMemoFLow';
+// import ParentDay15 from './25-Task/1.parent';
+// import ImageFilter from './26-task/Hwtask/imageFIlter';
+// import ArrayMap from './21-sept/useEffect/4.ArrayMap';
+// import HwProductListLoader from './21-sept/hwTask/3.HwproductListLoader';
+// import ProductListWithFilters from './22-sept/useEffect/2.productLIstWithFilters';
+// import HwProductListLoader from './21-sept/hwTask/3.HwproductListLoader';
 // import ProductList2 from './21-sept/useEffect/2.productList';
 // import ProductListLoader from './21-sept/useEffect/3.productListLoader';
 // import ProductList from './21-sept/useEffect/productLst';
@@ -42,7 +52,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   {/* <ProductList/> */}
   {/* < ProductList2 /> */}
   {/* <ProductListLoader/> */}
+  {/* <hr />
+  <HwProductListLoader /> }
+  <ImageFilter/>
+  <CounterWithUseMemo/>
+  <ProductListWithFiltersWithUseMemo />
+  <CodeFlowV1 />
+  <ParentDay15 />*/}
   <hr />
-  <HwProductListLoader />
+  <ParentV2/>
   </>
 )

@@ -1,0 +1,74 @@
+.TrendingMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+}
+.TrendingHeading{
+    font-size: 2.9rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TrendingMoviesMain{
+    width: 11rem;
+    height: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.67);;
+    position: relative;
+    border-radius: 8px;
+    padding-bottom: 10px;
+}
+.TrendindMovieVote{
+    background-color: rgba(0, 0, 0, 0.67);
+    font-size: 14px;
+    padding: 2px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border-radius: 10px;
+}
+.TrendingMoviesMain:hover{
+    background-color: #000000;
+}
+.TrendingMoviesMainImageDiv{
+    
+    width: 9rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TrendingMoviesMainImage{
+    border-radius: 10px;
+    width: 9rem;
+    height: 16rem;
+}
+.TrendingMoviesMainImage:hover{
+    transition: 0.3s;
+    width: 10rem;
+    height: 15.6rem;
+}
+.TrendingMovieInfo{
+    width: 10rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.TrendingMoviesMainTittle{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    margin: 0 ;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    margin:2px 0;
+}

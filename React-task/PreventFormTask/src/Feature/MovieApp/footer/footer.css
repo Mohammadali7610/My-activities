@@ -1,0 +1,28 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    background-color: #000;
+}
+.footerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footerDiv p{
+    font-size: 1.4rem;
+    padding: 8px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .footerDiv p:hover{
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+} */
