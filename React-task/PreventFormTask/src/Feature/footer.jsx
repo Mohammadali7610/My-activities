@@ -1,6 +1,6 @@
 import React from "react";
 
-const FormData = ({ formData }) => {
+const formData = ({ formData }) => {
   return (
     <div className="form-summary">
       <h2>Form Data</h2>

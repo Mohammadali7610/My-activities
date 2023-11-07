@@ -1,5 +1,7 @@
 import ReactDOM from 'react-dom/client';
-import ParentV2 from './29-sept/class/1.parentV1';
+import SaleTIme from './12-oct/1.setTheTimeForSale';
+import APICallingWithAsync from './13-oct/3.apiCallingWithAsync';
+// import ParentV2 from './29-sept/class/1.parentV1';
 // import ImageFilter from './26-task/Hwtask/imageFIlter';
 // import CounterWithUseMemo from './27-sept/class/2.with-useMemo';
 // import HwProductListLoader from './21-sept/hwTask/3.HwproductListLoader';
@@ -58,8 +60,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <CounterWithUseMemo/>
   <ProductListWithFiltersWithUseMemo />
   <CodeFlowV1 />
+  <ParentV2/>
+  <SaleTIme />
   <ParentDay15 />*/}
   <hr />
-  <ParentV2/>
+<APICallingWithAsync />
   </>
 )

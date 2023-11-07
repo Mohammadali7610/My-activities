@@ -6,14 +6,22 @@ import FireIconWhite from "../footer/assets/FireIconWhite.png";
 
 const Footer = () => {
   const [isTrendingClicked, setIsTrendingClicked] = useState(false);
+  const [isMovieClicked, setIsMovieClicked] = useState(false);
+  const [isSeriesClicked, setIsSeriesClicked] = useState(false);
 
   const handleTrendingClick = () => {
     console.log("Trending link clicked", isTrendingClicked);
     setIsTrendingClicked(true);
   };
 
-  const svgColorFunction = {
-    fill: isTrendingClicked ? "#000" : "#fff",
+  const handleMovieClick = () => {
+    console.log("Movie link clicked", isMovieClicked);
+    setIsMovieClicked(true);
+  };
+
+  const handleSeiresClick = () => {
+    console.log("Series link clicked", isSeriesClicked);
+    setIsSeriesClicked(true);
   };
 
   const linkStyles = {
@@ -26,6 +34,25 @@ const Footer = () => {
     marginBottom: "4px",
   };
 
+  const movieStyles = {
+    textDecoration: "none",
+    backgroundColor: isMovieClicked ? "white" : "#000",
+    color: isMovieClicked ? "#000" : "#fff",
+    borderRadius: isMovieClicked ? "10px" : "10px",
+    fill: isMovieClicked ? "#000" : "#fff",
+    marginTop: "4px",
+    marginBottom: "4px",
+  };
+   
+  const seriesStyles = {
+    textDecoration: "none",
+    backgroundColor: isSeriesClicked ? "white" : "#000",
+    color: isSeriesClicked ? "#000" : "#fff",
+    borderRadius: isSeriesClicked ? "10px" : "10px",
+    fill: isSeriesClicked ? "#000" : "#fff",
+    marginTop: "4px",
+    marginBottom: "4px",
+  };
   return (
     <footer className="footer">
       <div className="footerDiv">
@@ -39,10 +66,10 @@ const Footer = () => {
             Trending
           </p>
         </Link>
-        <Link to="/movies" style={{ textDecoration: "none" }}>
+        <Link to="/movies" style={movieStyles} onClick={handleMovieClick}>
           <p>Movies</p>
         </Link>
-        <Link to="/series" style={{ textDecoration: "none" }}>
+        <Link to="/series" style={seriesStyles} onClick={handleSeiresClick}>
           <p>Series</p>
         </Link>
       </div>

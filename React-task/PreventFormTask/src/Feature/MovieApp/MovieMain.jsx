@@ -7,6 +7,7 @@ import Footer from './footer/footer'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Movies from './MoviesContainer/MoviesContainer';
 import SeriesCont from './SeriesContainer/series';
+import HealthForm from '../sectionForm';
 
 const myRouter = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ export default function MovieMain() {
       <Movies/>
       <SeriesCont/>
       <Footer/>
+      
     </div>
   )
 }
