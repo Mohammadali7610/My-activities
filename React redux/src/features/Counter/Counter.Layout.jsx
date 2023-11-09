@@ -14,10 +14,14 @@ const Counter = () => {
   const counterState = useSelector((state) => state.Counter);
   const dispatch = useDispatch();
   return (
-    <div>
-      <p>I am Counter page : {counterState.count}</p>
-      <button onClick={() => dispatch(increment())}>Increment</button>
-      <button onClick={() => dispatch(decrement())}>Decrement</button>
+    <div style={{
+      display: "flex",
+      gap:"4px",
+      alignItems: "center",
+    }}>
+      <button onClick={() => dispatch(increment())}>+</button>
+      <p>{counterState.count}</p>
+      <button onClick={() => dispatch(decrement())}>-</button>
     </div>
   );
 };
