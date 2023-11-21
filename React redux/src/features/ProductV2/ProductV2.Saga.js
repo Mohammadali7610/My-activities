@@ -1,5 +1,5 @@
 import { put, takeLatest } from "redux-saga/effects";
-import { getProductsFailed, getProductsSuccess } from "./ProductV2.Slice";
+import { getProducts, getProductsFailed, getProductsSuccess } from "./ProductV2.Slice";
 
 const getRequest = async (url) => {
   try {
@@ -11,7 +11,7 @@ const getRequest = async (url) => {
   }
 };
 
-function* getProducts() {
+function* getProductsDetails() {
 
   try {
     const apiResponse = yield getRequest("https://fakestoreapi.com/products");
@@ -27,5 +27,5 @@ function* getProducts() {
 }
 
 export function* watchGetProducts() {
-  yield takeLatest("productsV2/getProducts", getProducts);
+  yield takeLatest(getProducts, getProductsDetails);
 }

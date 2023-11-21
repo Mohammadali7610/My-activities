@@ -1,12 +1,11 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "./ProductV2.Slice.js";
-import {  ClockLoader } from "react-spinners";
+import { ClockLoader } from "react-spinners";
 
 const ProductsV2 = () => {
   const products = useSelector((state) => state.myProducts);
   const dispatch = useDispatch();
-
 
   useEffect(() => {
     dispatch(getProducts());
@@ -21,7 +20,11 @@ const ProductsV2 = () => {
         <ol>
           {Array.isArray(products.data) &&
             products.data.map((product) => {
-              return <li key={product.id}>{product.price}</li>;
+              return (
+                <li key={product.id}>
+                  <div>{product.title} </div> <div>Price : {product.price}$ </div>
+                </li>
+              );
             })}
         </ol>
       </div>
