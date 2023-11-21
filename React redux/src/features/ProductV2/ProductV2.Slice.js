@@ -10,7 +10,6 @@ const ProductsV2Slice = createSlice({
   initialState,
   reducers: {
     getProducts: (state) => {
-      console.log("3. getProduct");
       state.isLoading = true;
     },
     getProductsSuccess: (state, action) => {

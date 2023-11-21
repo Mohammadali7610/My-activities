@@ -12,23 +12,16 @@ const getRequest = async (url) => {
 };
 
 function* getProducts() {
-  console.log("4. Request recieved inside getProducts saga");
 
   try {
     const apiResponse = yield getRequest("https://fakestoreapi.com/products");
-    console.log("5.  getProducts saga");
 
     if (!apiResponse) {
-      console.log("5.1  getProducts saga is failed");
       yield put(getProductsFailed());
       return;
     }
-    console.log("5.2 getProducts saga is passed");
     yield put(getProductsSuccess({ results: apiResponse }));
   } catch (err) {
-    console.log(
-      "5.3  getProducts saga is failed & inside catch"
-    );
     yield put(getProductsFailed());
   }
 }

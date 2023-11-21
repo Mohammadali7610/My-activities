@@ -7,10 +7,8 @@ const ProductsV2 = () => {
   const products = useSelector((state) => state.myProducts);
   const dispatch = useDispatch();
 
-  console.log("1.", products);
 
   useEffect(() => {
-    console.log("2.Use Effect Dispatch");
     dispatch(getProducts());
   }, [dispatch]);
 
