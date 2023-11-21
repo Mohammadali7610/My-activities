@@ -12,10 +12,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <Counter /> */}
     {/* <Calculator /> */}
     <div style={{ display: "flex", gap: 12 }}>
-      <div style={{ flex: "70%" }}>
+      <div style={{ flex: "50%" }}>
         <Products />
       </div>
       <div style={{ flex: "30%" }}>
+        <MyCart />
+      </div>
+      <div style={{ flex: "20%" }}>
         <ProductsV2 />
       </div>
     </div>

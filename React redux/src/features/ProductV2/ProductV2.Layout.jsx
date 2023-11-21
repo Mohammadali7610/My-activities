@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "./ProductV2.Slice.js";
-import { MoonLoader } from "react-spinners";
+import {  ClockLoader } from "react-spinners";
 
 const ProductsV2 = () => {
   const products = useSelector((state) => state.myProducts);
@@ -15,15 +15,15 @@ const ProductsV2 = () => {
   return (
     <div>
       <h1 style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-        My Products {products.isLoading && <MoonLoader size={20} />}
+        My Products {products.isLoading && <ClockLoader size={30} />}
       </h1>
       <div>
-        <ul>
+        <ol>
           {Array.isArray(products.data) &&
             products.data.map((product) => {
               return <li key={product.id}>{product.price}</li>;
             })}
-        </ul>
+        </ol>
       </div>
     </div>
   );
